@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedidos</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="pedido-lista">
+
+            <h1>LISTANDO PEDIDOS</h1>
+
+            <ul id="lista-pedidos"></ul>
+
+        </div>
+
+        <div id="pedido-cadastro">
+
+            <h2>Cadastrar Pedido</h2>
+
+            <input type="text" id="descricao-pedido" placeholder="Descrição">
+            <br><br>
+
+            <input type="number" id="valor-pedido" placeholder="Valor">
+            <br><br>
+
+            <select id="cliente-select">
+
+                <option value="">Selecione um cliente</option>
+
+            </select>
+
+            <br><br>
+
+            <button value="cadastrar" onclick="cadastrarPedido()">
+                Salvar Pedido
+            </button>
+
+            <button value="atualizar" onclick="atualizarPedido()">
+                Atualizar Pedido
+            </button>
+
+           
+
+        </div>
+
+
+
+    </div>
+
+    <script src="pedido.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+/* Reset e Cursor Personalizado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Cursor Roxo Neon */
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="%23bc13fe" d="M8,2 L8,22 L13,17 L18,27 L21,25 L16,15 L22,15 Z" stroke="white" stroke-width="1" /></svg>'), auto;
+}
+
+body {
+    background-color: #0d0221; /* Roxo ultra escuro */
+    color: #e0aaff;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* Box de Editar/Cadastrar Centralizado */
+#form-container {
+    background: rgba(20, 10, 35, 0.9);
+    border: 2px solid #bc13fe;
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 0 20px #bc13fe, inset 0 0 10px #bc13fe;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #fff;
+    text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 100%;
+    background: #1a0533;
+    border: 1px solid #bc13fe;
+    padding: 12px;
+    margin: 10px 0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 15px #bc13fe;
+}
+
+/* Botões Principais */
+button {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+/* Ajuste dos botões que vem do seu JS */
+button[style*="background-color:cyan"] {
+    background-color: transparent !important;
+    color: #00f2ff !important;
+    border: 2px solid #00f2ff !important;
+    box-shadow: 0 0 5px #00f2ff;
+}
+
+button[style*="background-color:red"] {
+    background-color: transparent !important;
+    color: #ff0055 !important;
+    border: 2px solid #ff0055 !important;
+    box-shadow: 0 0 5px #ff0055;
+}
+
+button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Lista de Clientes */
+#cliente-lista {
+    width: 100%;
+    max-width: 700px;
+    list-style: none;
+}
+
+#cliente-lista li {
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 1px solid #bc13fe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
